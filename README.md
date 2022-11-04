@@ -6,31 +6,31 @@
 ​
 ## Información relevante
 ​
-Este proyecto es una instancia de evaluación, por lo cual es INDIVIDUAL y OBLIGATORIO para los alumnos de Data Science de Henry. Se disponibilizará un Google Form y pueden cargarse los resultados las veces que quieran. Es obligatorio que todos disponibilicen el código utilizado, para validar los modelos construidos.
+Para este proyecto tomando en cuenta que nos piden elaborar un modelo que se aplique para el  mercado de bienes raíces de Colombia, por tal motivo se usarán las columnas que contengan información de cantidad salas, dormitorios, baños y superficie total. Ya que hemos consideramos a esos valores como los más importantes para determinar el  precio de un inmueble.
 ​
 ## Mercado inmobiliario
 ​
-Dentro de la sociedad globalizada e industrializada, es sabido que los precios de los inmuebles han presentado un constante cambio, por lo que quienes deseen invertir o vender una propiedad se enfrentan al fenómeno especulativo existente en la valorización de éstos. Esto, debido a la constante tendencia de las ciudades a crecer demográfica y comercialmente, llegando a un punto en donde no se tiene certeza de la valorización real dentro del sector en donde se desee invertir. 
-​
-Pese a que el precio depende, en cierta medida, de las tendencias que esté teniendo el mercado inmobiliario en un determinado tiempo, poder estimar adecuadamente el valor de una propiedad es una referencia clave para entender si es una buena oportunidad, ya sea de compra o de venta.
+El mercado inmobiliario a estudiar es de Colombia
 ​
 ## Descripción del problema
 ​
-Usted ha sido contactado de una importante empresa inversora dentro del rubro de la inmobiliaria en Colombia, con el fin de que implemente un modelo de clasificación que permita clasificar el precio de las propiedades en venta, utilizando los datos que se han puesto a su disposición correspondientes al año 2020.
+Predecir si el precio de un inmueble es barato o caro, se tomará a los valores 0 como barato y 1 como caro, se usará  un modelo de aprendizaje supervisado random forest classifier , sus principales ventajas son :
+
+    *Funciona bien -aún- sin ajuste de hiperparámetros
+
+    *Funciona bien para problemas de clasificación y también de regresión.
+
+    *Al utilizar múltiples árboles se reduce considerablemente el riesgo de overfiting
+
+    *Se mantiene estable con nuevas muestras puesto que al utilizar cientos de árboles sigue prevaleciendo el promedio de sus votaciones.
 ​
-Para esto, específicamente, debe predecir la **categorización** de las propiedades entre baratas o caras, considerando como criterio el valor promedio de los precios (la media). 
+## Entrega:
+
 ​
-## Entrega
-​
-Deben tener el código en un script .py o Jupyter Notebook .ipynb, el cual debe incluir un buen EDA, feature engineerging y, de ser posible, un pipeline de Machine Learning para el procesamiento de datos que consideren necesario. Es importante **explicar claramente cada paso realizado** mediante comentarios en el script o textos formato markdown dentro del Notebook, pensar que cualquier persona (en este caso serán los Henry Mentors evaluadores) debe entender de la mejor manera posible cada razonamiento y pasos aplicados.
-​
-Recuerden, además, que deben enviar el repositorio que contenga el proyecto, por lo que es importante que le dediquen tiempo también a esta parte, dejando todo ordenado y con un README acorde, que sirva de introducción al contenido dentro de éste.
-​
-Por otro lado, es obligatorio que el script genere un archivo .csv sólo con las predicciones, teniendo únicamente **una sola columna** (sin index) que debe llamarse 'pred' y tenga todos los valores de las predicciones, con un valor por fila. De no llamarse así la **única columna**, nuestro script de validación **NO LO VA A TOMAR** y no aparecerán en el dashboard.
-​
-El nombre del archivo debe ser su usuario de GitHub, si su usuario de GitHub es 'pjr95', el archivo .csv con las predicciones debe llamarse 'pjr95.csv'. Vamos a validar tanto los datos que suban como el código, por lo que seguir estos pasos es fundamental.
-​
-Cuando entreguen les pedimos que verifiquen que su usuario de GitHub aparezca en el dashboard. En caso de que no aparezca, tal como se comentó más arriba, es debido a que el archivo entregado con las predicciones no cumple con los requisitos solicitados. 
+*Un archivo ipynb llamado PROYECTO-02
+
+*Un archivo csv llamado juancortezs07   
+
 ​
 ## Métrica a utilizar
 ​
@@ -85,3 +85,4 @@ Se proveen los archivos dentro del archivo comprimido 'properties_colombia.zip':
 - Si se presentan comentarios, es una buena oportunidad de aplicar procesamiento del lenguaje natural (NLP) para mejorar nuestro modelo.
 - En cuanto a la utilización de git, recuerden que si quieren hacer un cambio experimental pero no quieren romper el modelo, pueden utilizar [branching](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 - Aprovechen esta instancia de aprendizaje, experimenten y, sobre todo, ¡diviértanse!
+
